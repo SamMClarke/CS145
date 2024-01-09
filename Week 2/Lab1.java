@@ -62,12 +62,12 @@ public class Lab1
     {
         System.out.printf("%s%n%s%n%d%s%n%s%n%s%n%s%n%n", 
         "This program allows you to play a guessing game.",             
-                "I will think of a number between " + MIN_NUM + " and", 
+                "I will think of a number between " + MIN_NUM + " and ", 
                 MAX_NUM,
                 " and will allow you to guess until", 
                 "you get it. For each guess, I will tell you", 
                 "whether the right answer is higher or lower", 
-                "than you guess.");
+                "than your guess.");
         return;
     }
 
@@ -118,11 +118,11 @@ public class Lab1
     {
         int guess = -1; //Initialize guess variable to a value outside the range of numbers
         String plural = "es";
-        System.out.println("I'm thinkig of a number between " + MIN + " and " + MAX + "...");
+        System.out.println("I'm thinking of a number between " + MIN + " and " + MAX + "...");
 
         while (guess != correctNumber) //Keep asking for guesses until right answer is found
         {
-            System.out.print("Your Guess? ");
+            System.out.print("Your guess? ");
             guess = input.nextInt();
             guesses++;
 
