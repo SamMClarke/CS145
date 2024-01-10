@@ -53,4 +53,10 @@ public class Student
 
         return gradeDiff;
     }
+
+    public String toString()
+    {
+        String studentData = this.name + ": " + this.grade;
+        return studentData;
+    }
 }

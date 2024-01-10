@@ -19,5 +19,7 @@ public class Lecture4
         gradeDifference = studentX.compareGrades(studentY);
 
         System.out.println("The difference in grades is " + gradeDifference);
+
+        System.out.println(studentX);
     }
 }
