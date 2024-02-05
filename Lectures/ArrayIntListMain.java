@@ -3,7 +3,7 @@ public class ArrayIntListMain
     public static void main(String[] args)
     {
         ArrayIntList list = new ArrayIntList();
-
+        
         System.out.println(list);
 
         list.add(24);
