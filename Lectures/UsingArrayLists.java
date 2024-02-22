@@ -4,64 +4,80 @@ public class UsingArrayLists
 {
     public static void main(String[] args)
     {
-        List<String> list = new ArrayList<String>();
+        Stack<Integer> stack = new Stack<>();
+        stack.push(1);
+        stack.push(2);
+        stack.push(3);
+        stack.push(4);
+        stack.push(5);
 
-        list.add("hello");
-        list.add("snow");
-        list.add("alphabet");
-        list.add("computers");
+        // Summing up all the values in the stack while preserving the original stack
+        int sum = stack.stream().mapToInt(Integer::intValue).sum();
 
-        System.out.println(list);
+        // Outputting the sum
+        System.out.println("Sum of values in the stack: " + sum);
 
-        list.add(2, "lights");
+        // Original stack remains intact
+        System.out.println("Original stack: " + stack);
+        System.out.println(stack.pop());
+        // List<String> list = new ArrayList<String>();
 
-        System.out.println(list);
+        // list.add("hello");
+        // list.add("snow");
+        // list.add("alphabet");
+        // list.add("computers");
 
-        list.remove(1);
+        // System.out.println(list);
 
-        System.out.println(list);
+        // list.add(2, "lights");
 
-        System.out.println(list.get(3));
+        // System.out.println(list);
 
-        System.out.println(list.size());
+        // list.remove(1);
 
-        for (int i = 0; i < list.size(); i++)
-        {
-            System.out.print(list.get(i) + ", ");
-        }
+        // System.out.println(list);
 
-        for (String word : list)
-        {
-            System.out.print(word + ", ");
-        }
-        System.out.println();
+        // System.out.println(list.get(3));
 
-        Collections.sort(list);
+        // System.out.println(list.size());
 
-        System.out.println(list);
+        // for (int i = 0; i < list.size(); i++)
+        // {
+        //     System.out.print(list.get(i) + ", ");
+        // }
 
-        List<Integer> intList = new ArrayList<Integer>();
+        // for (String word : list)
+        // {
+        //     System.out.print(word + ", ");
+        // }
+        // System.out.println();
 
-        intList.add(4);
-        intList.add(-16);
-        intList.add(8);
+        // Collections.sort(list);
 
-        System.out.println(intList);
+        // System.out.println(list);
+
+        // List<Integer> intList = new ArrayList<Integer>();
+
+        // intList.add(4);
+        // intList.add(-16);
+        // intList.add(8);
+
+        // System.out.println(intList);
         
-        Collections.sort(intList);
+        // Collections.sort(intList);
 
-        System.out.println(intList);
+        // System.out.println(intList);
 
-        List<Point> points = new ArrayList<Point>();
+        // List<Point> points = new ArrayList<Point>();
 
-        points.add(new Point(2, 2));
-        points.add(new Point(1, -1));
-        points.add(new Point(2, 2));
+        // points.add(new Point(2, 2));
+        // points.add(new Point(1, -1));
+        // points.add(new Point(2, 2));
 
-        System.out.println(points);
+        // System.out.println(points);
 
-        Collections.sort(points);
+        // Collections.sort(points);
 
-        System.out.println(points);
+        // System.out.println(points);
     }
 }
